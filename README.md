@@ -12,6 +12,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 - Avoir définit php dans les variables d’environnement 
 - Composer
 - symfony CLI
+- npm
 - une base de données relationnelles (ex: mariaDB)
 - faire la commande symfony check:requirement et si besoin modifier le fichier php.ini
 
