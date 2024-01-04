@@ -9,6 +9,7 @@ Il comprend un front et un back.
 
 Avant de commencer, assurez-vous d'avoir installé :
 - PHP (version 8.2.4)
+- Avoir définit php dans les variables d’environnement 
 - Composer
 - symfony CLI
 - une base de données relationnelles (ex: mariaDB)
