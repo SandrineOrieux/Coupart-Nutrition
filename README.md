@@ -26,7 +26,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 4. Configurer le fichier .env pour la base de données et le mail
 5. générer les autoloads : `composer require symfony/runtime`
 6. Créez la base de données : `symfony console doctrine:database:create`
-7. Exécutez les migrations pour créer les tables : `php bin/console doctrine:migrations:migrate`
+7. Exécutez les migrations pour créer les tables : `synfony console doctrine:migrations:migrate`
 8. Lancez le serveur local : `symfony serve` ou utilisez votre serveur web habituel.
 9. Lancez npm : `npm run watch` (pour developpement)
 
