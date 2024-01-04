@@ -24,11 +24,11 @@ Avant de commencer, assurez-vous d'avoir installé :
 3. -1 Installez les dépendances via Composer : `composer install`
 3. -2 Installez les dépendances via npm : `npm install`
 4. Configurer le fichier .env pour la base de données et le mail
-5. Générez la clé d'application : `php bin/console app:generate-key`
-6. générer les autoloads : `composer require symfony/runtime`
-6. Créez la base de données : `php bin/console doctrine:database:create`
+5. générer les autoloads : `composer require symfony/runtime`
+6. Créez la base de données : `symfony console doctrine:database:create`
 7. Exécutez les migrations pour créer les tables : `php bin/console doctrine:migrations:migrate`
 8. Lancez le serveur local : `symfony serve` ou utilisez votre serveur web habituel.
+9. Lancez npm : `npm run watch` (pour developpement)
 
 ## Utilisation
 
