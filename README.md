@@ -21,7 +21,8 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 1. Clonez ce dépôt : `git clone https://github.com/SandrineOrieux/Coupart-nutrition.git`
 2. Rendez-vous dans le répertoire du projet : `cd Coupart-nutrition`
-3. Installez les dépendances via Composer : `composer install`
+3. -1 Installez les dépendances via Composer : `composer install`
+3. -2 Installez les dépendances via npm : `npm install`
 4. Configurer le fichier .env pour la base de données et le mail
 5. Générez la clé d'application : `php bin/console app:generate-key`
 6. générer les autoloads : `composer require symfony/runtime`
