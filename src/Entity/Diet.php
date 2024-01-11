@@ -22,17 +22,16 @@ class Diet
     #[ORM\Column(type: Types::TEXT)]
     private ?string $description = null;
 
-    #[ORM\ManyToMany(targetEntity: User::class, inversedBy: 'diets')]
-    private Collection $userDiet;
+    #[ORM\ManyToMany(targetEntity: User::class, mappedBy: 'diets')]
+    private Collection $users;
 
-    #[ORM\OneToMany(mappedBy: 'diet', targetEntity: CategoryOfFoodDiet::class)]
-    private Collection $categoryOfFood;
-
+    #[ORM\ManyToMany(targetEntity: Recipe::class, mappedBy: 'diets')]
+    private Collection $recipes;
 
     public function __construct()
     {
-        $this->userDiet = new ArrayCollection();
-        $this->categoryOfFood = new ArrayCollection();
+        $this->users = new ArrayCollection();
+        $this->recipes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -67,52 +66,52 @@ class Diet
     /**
      * @return Collection<int, User>
      */
-    public function getUserDiet(): Collection
+    public function getUsers(): Collection
     {
-        return $this->userDiet;
+        return $this->users;
     }
 
-    public function addUserDiet(User $userDiet): static
+    public function addUser(User $user): static
     {
-        if (!$this->userDiet->contains($userDiet)) {
-            $this->userDiet->add($userDiet);
+        if (!$this->users->contains($user)) {
+            $this->users->add($user);
+            $user->addDiet($this);
         }
 
         return $this;
     }
 
-    public function removeUserDiet(User $userDiet): static
+    public function removeUser(User $user): static
     {
-        $this->userDiet->removeElement($userDiet);
+        if ($this->users->removeElement($user)) {
+            $user->removeDiet($this);
+        }
 
         return $this;
     }
 
     /**
-     * @return Collection<int, CategoryOfFoodDiet>
+     * @return Collection<int, Recipe>
      */
-    public function getCategoryOfFood(): Collection
+    public function getRecipes(): Collection
     {
-        return $this->categoryOfFood;
+        return $this->recipes;
     }
 
-    public function addCategoryOfFood(CategoryOfFoodDiet $categoryOfFood): static
+    public function addRecipe(Recipe $recipe): static
     {
-        if (!$this->categoryOfFood->contains($categoryOfFood)) {
-            $this->categoryOfFood->add($categoryOfFood);
-            $categoryOfFood->setDiet($this);
+        if (!$this->recipes->contains($recipe)) {
+            $this->recipes->add($recipe);
+            $recipe->addDiet($this);
         }
 
         return $this;
     }
 
-    public function removeCategoryOfFood(CategoryOfFoodDiet $categoryOfFood): static
+    public function removeRecipe(Recipe $recipe): static
     {
-        if ($this->categoryOfFood->removeElement($categoryOfFood)) {
-            // set the owning side to null (unless already changed)
-            if ($categoryOfFood->getDiet() === $this) {
-                $categoryOfFood->setDiet(null);
-            }
+        if ($this->recipes->removeElement($recipe)) {
+            $recipe->removeDiet($this);
         }
 
         return $this;

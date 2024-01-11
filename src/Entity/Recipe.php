@@ -19,8 +19,8 @@ class Recipe
     #[ORM\Column(length: 255)]
     private ?string $title = null;
 
-    #[ORM\Column(type: Types::TEXT, nullable: true)]
-    private ?string $description = null;
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $decription = null;
 
     #[ORM\Column]
     private ?int $preparationTime = null;
@@ -37,20 +37,24 @@ class Recipe
     #[ORM\Column]
     private ?bool $isPublic = null;
 
+    #[ORM\ManyToMany(targetEntity: Ingredient::class, mappedBy: 'recipes')]
+    private Collection $ingredients;
+
     #[ORM\ManyToOne(inversedBy: 'recipes')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?TypeOfRecipe $typeOfRecipe = null;
+    private ?TypeOfRecipe $TypeOfRecipe = null;
 
-    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: Review::class, orphanRemoval: true)]
+    #[ORM\ManyToMany(targetEntity: diet::class, inversedBy: 'recipes')]
+    private Collection $diets;
+
+    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: review::class, orphanRemoval: true)]
     private Collection $reviews;
-
-    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: IngredientRecipe::class)]
-    private Collection $ingredientRecipes;
 
     public function __construct()
     {
+        $this->ingredients = new ArrayCollection();
+        $this->diets = new ArrayCollection();
         $this->reviews = new ArrayCollection();
-        $this->ingredientRecipes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -70,14 +74,14 @@ class Recipe
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getDecription(): ?string
     {
-        return $this->description;
+        return $this->decription;
     }
 
-    public function setDescription(?string $description): static
+    public function setDecription(string $decription): static
     {
-        $this->description = $description;
+        $this->decription = $decription;
 
         return $this;
     }
@@ -142,27 +146,78 @@ class Recipe
         return $this;
     }
 
-    public function getTypeOfRecipe(): ?TypeOfRecipe
+    /**
+     * @return Collection<int, Ingredient>
+     */
+    public function getIngredients(): Collection
     {
-        return $this->typeOfRecipe;
+        return $this->ingredients;
     }
 
-    public function setTypeOfRecipe(?TypeOfRecipe $typeOfRecipe): static
+    public function addIngredient(Ingredient $ingredient): static
     {
-        $this->typeOfRecipe = $typeOfRecipe;
+        if (!$this->ingredients->contains($ingredient)) {
+            $this->ingredients->add($ingredient);
+            $ingredient->addRecipe($this);
+        }
+
+        return $this;
+    }
+
+    public function removeIngredient(Ingredient $ingredient): static
+    {
+        if ($this->ingredients->removeElement($ingredient)) {
+            $ingredient->removeRecipe($this);
+        }
+
+        return $this;
+    }
+
+    public function getTypeOfRecipe(): ?TypeOfRecipe
+    {
+        return $this->TypeOfRecipe;
+    }
+
+    public function setTypeOfRecipe(?TypeOfRecipe $TypeOfRecipe): static
+    {
+        $this->TypeOfRecipe = $TypeOfRecipe;
 
         return $this;
     }
 
     /**
-     * @return Collection<int, Review>
+     * @return Collection<int, diet>
+     */
+    public function getDiets(): Collection
+    {
+        return $this->diets;
+    }
+
+    public function addDiet(diet $diet): static
+    {
+        if (!$this->diets->contains($diet)) {
+            $this->diets->add($diet);
+        }
+
+        return $this;
+    }
+
+    public function removeDiet(diet $diet): static
+    {
+        $this->diets->removeElement($diet);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, review>
      */
     public function getReviews(): Collection
     {
         return $this->reviews;
     }
 
-    public function addReview(Review $review): static
+    public function addReview(review $review): static
     {
         if (!$this->reviews->contains($review)) {
             $this->reviews->add($review);
@@ -172,42 +227,12 @@ class Recipe
         return $this;
     }
 
-    public function removeReview(Review $review): static
+    public function removeReview(review $review): static
     {
         if ($this->reviews->removeElement($review)) {
             // set the owning side to null (unless already changed)
             if ($review->getRecipe() === $this) {
                 $review->setRecipe(null);
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, IngredientRecipe>
-     */
-    public function getIngredientRecipes(): Collection
-    {
-        return $this->ingredientRecipes;
-    }
-
-    public function addIngredientRecipe(IngredientRecipe $ingredientRecipe): static
-    {
-        if (!$this->ingredientRecipes->contains($ingredientRecipe)) {
-            $this->ingredientRecipes->add($ingredientRecipe);
-            $ingredientRecipe->setRecipe($this);
-        }
-
-        return $this;
-    }
-
-    public function removeIngredientRecipe(IngredientRecipe $ingredientRecipe): static
-    {
-        if ($this->ingredientRecipes->removeElement($ingredientRecipe)) {
-            // set the owning side to null (unless already changed)
-            if ($ingredientRecipe->getRecipe() === $this) {
-                $ingredientRecipe->setRecipe(null);
             }
         }
 

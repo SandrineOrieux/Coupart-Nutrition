@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -29,19 +30,30 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
-    #[ORM\ManyToMany(targetEntity: Diet::class, mappedBy: 'userDiet')]
-    private Collection $diets;
-
-    #[ORM\ManyToMany(targetEntity: Allergen::class, mappedBy: 'user')]
+    #[ORM\ManyToMany(targetEntity: Allergen::class, inversedBy: 'users')]
     private Collection $allergens;
 
-    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Review::class)]
+    #[ORM\ManyToMany(targetEntity: diet::class, inversedBy: 'users')]
+    private Collection $diets;
+
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: review::class, orphanRemoval: true)]
     private Collection $reviews;
+
+    #[ORM\Column(length: 255)]
+    private ?string $firstName = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $lastName = null;
+
+    #[ORM\Column(type: Types::DATE_IMMUTABLE)]
+    private ?\DateTimeImmutable $birthday = null;
+
+
 
     public function __construct()
     {
-        $this->diets = new ArrayCollection();
         $this->allergens = new ArrayCollection();
+        $this->diets = new ArrayCollection();
         $this->reviews = new ArrayCollection();
     }
 
@@ -116,33 +128,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     }
 
     /**
-     * @return Collection<int, Diet>
-     */
-    public function getDiets(): Collection
-    {
-        return $this->diets;
-    }
-
-    public function addDiet(Diet $diet): static
-    {
-        if (!$this->diets->contains($diet)) {
-            $this->diets->add($diet);
-            $diet->addUserDiet($this);
-        }
-
-        return $this;
-    }
-
-    public function removeDiet(Diet $diet): static
-    {
-        if ($this->diets->removeElement($diet)) {
-            $diet->removeUserDiet($this);
-        }
-
-        return $this;
-    }
-
-    /**
      * @return Collection<int, Allergen>
      */
     public function getAllergens(): Collection
@@ -154,7 +139,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         if (!$this->allergens->contains($allergen)) {
             $this->allergens->add($allergen);
-            $allergen->addUser($this);
         }
 
         return $this;
@@ -162,22 +146,44 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function removeAllergen(Allergen $allergen): static
     {
-        if ($this->allergens->removeElement($allergen)) {
-            $allergen->removeUser($this);
-        }
+        $this->allergens->removeElement($allergen);
 
         return $this;
     }
 
     /**
-     * @return Collection<int, Review>
+     * @return Collection<int, diet>
+     */
+    public function getDiets(): Collection
+    {
+        return $this->diets;
+    }
+
+    public function addDiet(diet $diet): static
+    {
+        if (!$this->diets->contains($diet)) {
+            $this->diets->add($diet);
+        }
+
+        return $this;
+    }
+
+    public function removeDiet(diet $diet): static
+    {
+        $this->diets->removeElement($diet);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, review>
      */
     public function getReviews(): Collection
     {
         return $this->reviews;
     }
 
-    public function addReview(Review $review): static
+    public function addReview(review $review): static
     {
         if (!$this->reviews->contains($review)) {
             $this->reviews->add($review);
@@ -187,7 +193,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function removeReview(Review $review): static
+    public function removeReview(review $review): static
     {
         if ($this->reviews->removeElement($review)) {
             // set the owning side to null (unless already changed)
@@ -195,6 +201,42 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $review->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(string $firstName): static
+    {
+        $this->firstName = $firstName;
+
+        return $this;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName(string $lastName): static
+    {
+        $this->lastName = $lastName;
+
+        return $this;
+    }
+
+    public function getBirthday(): ?\DateTimeImmutable
+    {
+        return $this->birthday;
+    }
+
+    public function setBirthday(\DateTimeImmutable $birthday): static
+    {
+        $this->birthday = $birthday;
 
         return $this;
     }

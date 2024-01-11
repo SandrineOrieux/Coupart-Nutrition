@@ -18,16 +18,16 @@ class Allergen
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
+    #[ORM\ManyToMany(targetEntity: User::class, mappedBy: 'allergens')]
+    private Collection $users;
+
     #[ORM\OneToMany(mappedBy: 'allergen', targetEntity: Ingredient::class)]
     private Collection $ingredients;
 
-    #[ORM\ManyToMany(targetEntity: user::class, inversedBy: 'allergens')]
-    private Collection $user;
-
     public function __construct()
     {
+        $this->users = new ArrayCollection();
         $this->ingredients = new ArrayCollection();
-        $this->user = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -43,6 +43,33 @@ class Allergen
     public function setName(string $name): static
     {
         $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, User>
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): static
+    {
+        if (!$this->users->contains($user)) {
+            $this->users->add($user);
+            $user->addAllergen($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): static
+    {
+        if ($this->users->removeElement($user)) {
+            $user->removeAllergen($this);
+        }
 
         return $this;
     }
@@ -73,30 +100,6 @@ class Allergen
                 $ingredient->setAllergen(null);
             }
         }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, user>
-     */
-    public function getUser(): Collection
-    {
-        return $this->user;
-    }
-
-    public function addUser(user $user): static
-    {
-        if (!$this->user->contains($user)) {
-            $this->user->add($user);
-        }
-
-        return $this;
-    }
-
-    public function removeUser(user $user): static
-    {
-        $this->user->removeElement($user);
 
         return $this;
     }
