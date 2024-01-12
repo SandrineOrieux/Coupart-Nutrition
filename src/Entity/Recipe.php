@@ -53,7 +53,7 @@ class Recipe
     #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: review::class, orphanRemoval: true)]
     private Collection $reviews;
 
-    #[Vich\UploadableField(mapping: 'caron', fileNameProperty: 'imageName', size: 'imageSize')]
+    #[Vich\UploadableField(mapping: 'coupart', fileNameProperty: 'imageName', size: 'imageSize')]
     private ?File $imageFile = null;
 
     #[ORM\Column(nullable: true)]

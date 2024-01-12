@@ -1,4 +1,4 @@
-# Caron-nutrition
+# Coupart-nutrition
 
 Ce projet est une application Symfony conçue pour une nutritionniste dans le cadre d'une évaluation d'entrainement au titre graduate developpeur web.
 Il comprend un front et un back. 

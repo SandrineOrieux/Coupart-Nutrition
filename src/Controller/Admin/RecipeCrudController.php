@@ -25,7 +25,7 @@ class RecipeCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         $mappingsParams = $this->getParameter('vich_uploader.mappings');
-        $recipeImagePath = $mappingsParams['caron']['uri_prefix'];
+        $recipeImagePath = $mappingsParams['coupart']['uri_prefix'];
 
         yield TextField::new('title', 'Titre de la recette');
 
