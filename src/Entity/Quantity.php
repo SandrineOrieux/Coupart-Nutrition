@@ -18,6 +18,10 @@ class Quantity
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $unity = null;
+    public function __toString()
+    {
+        return $this->getNumber() . " " . $this->getUnity();
+    }
 
     public function getId(): ?int
     {

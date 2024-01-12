@@ -33,6 +33,10 @@ class Diet
         $this->users = new ArrayCollection();
         $this->recipes = new ArrayCollection();
     }
+    public function __toString()
+    {
+        return $this->getName();
+    }
 
     public function getId(): ?int
     {

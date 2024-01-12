@@ -56,6 +56,10 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->diets = new ArrayCollection();
         $this->reviews = new ArrayCollection();
     }
+    public function __toString()
+    {
+        return $this->getFirstName() . " " . $this->getLastName();
+    }
 
     public function getId(): ?int
     {

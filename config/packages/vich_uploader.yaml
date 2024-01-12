@@ -1,0 +1,8 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+       caron:
+           uri_prefix: /images/caron
+           upload_destination: '%kernel.project_dir%/public/images/caron'
+           namer: Vich\UploaderBundle\Naming\SmartUniqueNamer

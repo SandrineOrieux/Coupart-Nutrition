@@ -29,6 +29,10 @@ class Allergen
         $this->users = new ArrayCollection();
         $this->ingredients = new ArrayCollection();
     }
+    public function __toString()
+    {
+        return $this->getName();
+    }
 
     public function getId(): ?int
     {

@@ -31,6 +31,15 @@ class Ingredient
     {
         $this->recipes = new ArrayCollection();
     }
+    public function __toString()
+    {
+        $IsAllergen = null;
+        if ($this->allergen) {
+            $IsAllergen =  " !attention allegène : " . $this->getAllergen();
+        }
+
+        return $this->getQuantity() . " " . $this->getName() . $IsAllergen;
+    }
 
     public function getId(): ?int
     {

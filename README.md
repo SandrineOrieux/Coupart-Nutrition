@@ -1,4 +1,4 @@
-# Coupart-nutrition
+# Caron-nutrition
 
 Ce projet est une application Symfony conçue pour une nutritionniste dans le cadre d'une évaluation d'entrainement au titre graduate developpeur web.
 Il comprend un front et un back. 
@@ -27,15 +27,11 @@ Avant de commencer, assurez-vous d'avoir installé :
 5. générer les autoloads : `composer require symfony/runtime`
 6. Créez la base de données : `symfony console doctrine:database:create`
 7. Exécutez les migrations pour créer les tables : `synfony console doctrine:migrations:migrate`
-8. Lancez le serveur local : `symfony serve` ou utilisez votre serveur web habituel.
-9. Lancez npm : `npm run watch` (pour developpement)
+
 
 ## Utilisation
-
-Seul l'administrateur peut créer un nouveau profil utilisateur de type patient depuis son espace.
-Seul l'administrateur et les patients enregistrés peuvent se connecter via le formulaire sur la page : mon espace.
-Seul les patients peuvent noter et laisser un commentaire. Les visiteurs peuvent voir les recettes publiques, la note et les commentaires des patients (les commentaires sont affichés sans le nom du patient). 
-Le formulaire de contact envoie un mail à l'administrateur. Les commentaires sont soumis à validation de l'administrateur avant d'être publiés.
+ - Lancez le serveur local : `symfony server:start` ou utilisez votre serveur web habituel.
+ - Lancez npm : `npm run build` (pour developpement)
 
 ## Contribuer
 
@@ -53,4 +49,31 @@ Orieux Sandrine.
 ## Licence
 
 Pas de licence.
+
+## Documentations 
+
+- Composer :
+https://getcomposer.org/download/
+
+- Symfony CLI :
+https://symfony.com/download
+
+- Symfony :
+https://symfony.com/
+
+- Symfony webpack encore :
+https://symfony.com/doc/current/frontend/encore/installation.html
+
+- Symfony easyadmin :
+https://symfony.com/bundles/EasyAdminBundle/
+
+- UserCrudController pour le hash du mot de passe et confirmation :
+https://dev.to/nabbisen/symfony-6-and-easyadmin-4-hashing-password-3eec
+
+- Symfony vich uploader :
+https://github.com/dustin10/VichUploaderBundle/blob/master/docs/index.md
+
+- Icones du dashbord :
+https://fontawesome.com
+
 
