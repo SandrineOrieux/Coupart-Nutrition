@@ -1,0 +1,420 @@
+<mxfile host="65bd71144e">
+    <diagram id="mETmnVZE57GePqD7Dpf7" name="Page-1">
+        <mxGraphModel dx="2335" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="70" width="2490" height="2490" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Personas" style="text;html=1;fontSize=30;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="120" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&amp;nbsp;L'admin représente Sandrine Coupart,&lt;br&gt;&amp;nbsp;elle gère le site. Elle souhaite partager ses&lt;br&gt;&amp;nbsp;recettes à un plus grand nombre de visiteurs.&lt;br&gt;Et reservé certaine de ses recettes &lt;br&gt;à ses patients&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="170" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PATIENT&lt;/font&gt;&lt;br&gt;Il représente un patient type&lt;br&gt;&amp;nbsp;avec des allergies et des régimes alimentaires.&lt;br&gt;&amp;nbsp;Il veut pouvoir visualisé rapidement&lt;br&gt;&amp;nbsp;les recettes qui sont adaptées&lt;br&gt;&amp;nbsp;à ses régimes alimentaires &lt;br&gt;et à ses allergies.&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="170" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VISITEUR&lt;/font&gt;&lt;br&gt;Il représente un visiteur type qui veut regarder les recettes publiques et peut-être devenir un patient.&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="170" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="555" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PATIENT&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="485" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VISITEUR&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="620" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="User Storry Mapping" style="text;html=1;fontSize=30;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="400" width="290" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Personas" style="text;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="500" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Epics" style="text;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="740" width="60" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Features" style="text;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="900" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Version 1" style="text;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="-50" y="1020" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="US1 Se connecter" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="730" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="L'utilisateur doit pouvoir se connecter à son espace." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="875" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;font color=&quot;#000000&quot;&gt;User Story 1&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="1040" width="220" height="290" as="geometry">
+                        <mxRectangle x="200" y="1460" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="Créer l'accès admin" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="22">
+                    <mxGeometry x="45" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="22">
+                    <mxGeometry x="113" y="260" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;" vertex="1" parent="22">
+                    <mxGeometry x="50" y="260" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;" vertex="1" parent="22">
+                    <mxGeometry x="15" y="240" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin de pouvoir accéder à mon dashboard de manière sécurisé afin de visualiser toutes les actions que je pourrais faire depuis mon dashboard.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="22">
+                    <mxGeometry x="45" y="60" width="155" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font color=&quot;#000000&quot;&gt;User Story 2&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="1370" width="220" height="250" as="geometry">
+                        <mxRectangle x="200" y="1460" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="Créer l'accès Patient" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="37">
+                    <mxGeometry x="45" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="37">
+                    <mxGeometry x="113" y="220" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;" vertex="1" parent="37">
+                    <mxGeometry x="50" y="220" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;" vertex="1" parent="37">
+                    <mxGeometry x="15" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que patient j'ai besoin d'accéder à mon espace personnel afin de visualisé l'accueil du site en tant que patient.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="37">
+                    <mxGeometry x="45" y="80" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="US2 Créer un patient" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="730" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="485" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="L'admin, depuis son dashboard, doit pouvoir créer un patient avec ses allergies et ses régimes alimentaires." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="875" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="&lt;font color=&quot;#000000&quot;&gt;User Story 3&lt;br&gt;&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="1040" width="220" height="220" as="geometry">
+                        <mxRectangle x="200" y="1460" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="Créer le CRUD patient" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="46">
+                    <mxGeometry x="45" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="46">
+                    <mxGeometry x="113" y="190" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;" vertex="1" parent="46">
+                    <mxGeometry x="50" y="190" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;" vertex="1" parent="46">
+                    <mxGeometry x="15" y="170" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin depuis mon dashboard de pouvoir créer un patient afin de pouvoir le visualiser&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="46">
+                    <mxGeometry x="45" y="60" width="155" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&lt;font color=&quot;#000000&quot;&gt;User Story 4&lt;br&gt;&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="1300" width="220" height="230" as="geometry">
+                        <mxRectangle x="200" y="1460" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="Créer le CRUD allergie" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="70">
+                    <mxGeometry x="45" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="70">
+                    <mxGeometry x="113" y="200" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;" vertex="1" parent="70">
+                    <mxGeometry x="50" y="200" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;" vertex="1" parent="70">
+                    <mxGeometry x="15" y="180" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin depuis mon dashboard de pouvoir créer des références allergies afin de pouvoir les assigner à un patient&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="70">
+                    <mxGeometry x="45" y="60" width="155" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="&lt;font color=&quot;#000000&quot;&gt;User Story 5&lt;br&gt;&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="1570" width="220" height="240" as="geometry">
+                        <mxRectangle x="200" y="1460" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="Créer le CRUD régimes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="76">
+                    <mxGeometry x="45" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;" vertex="1" parent="76">
+                    <mxGeometry x="113" y="210" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;" vertex="1" parent="76">
+                    <mxGeometry x="50" y="210" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;" vertex="1" parent="76">
+                    <mxGeometry x="15" y="190" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin depuis mon dashboard de pouvoir créer des régimes&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;afin de pouvoir les assigner à un patient&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" vertex="1" parent="76">
+                    <mxGeometry x="45" y="60" width="155" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="US3 Ajouter une recette" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="730" width="330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="485" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="L'admin, depuis son dashboard, doit pouvoir ajouter une recette avec son accécibilité au patient seulement." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="875" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="&lt;font color=&quot;#000000&quot;&gt;User Story 6&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="920" y="1040" width="220" height="250" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="86" value="Créer le CRUD des types de recettes&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="85">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="85">
+                    <mxGeometry x="113" y="220" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="85">
+                    <mxGeometry x="50" y="220" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="85">
+                    <mxGeometry x="15" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin de pouvoir créer des types de recettes (plat, dessert..) afin que le patient puisse trier les recettes.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="85">
+                    <mxGeometry x="45" y="80" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="&lt;font color=&quot;#000000&quot;&gt;User Story 7&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="920" y="1330" width="220" height="250" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="Créer le CRUD des ingredients et des quantités" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="92">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="92">
+                    <mxGeometry x="113" y="220" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="92">
+                    <mxGeometry x="50" y="220" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="92">
+                    <mxGeometry x="15" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin de pouvoir créer des ingrédients avec leur quantité afin que le patient puisse faire la recette.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="92">
+                    <mxGeometry x="45" y="80" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="&lt;font color=&quot;#000000&quot;&gt;User Story 8&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="920" y="1630" width="220" height="250" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="99" value="Créer le CRUD des recettes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="98">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="98">
+                    <mxGeometry x="113" y="220" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="98">
+                    <mxGeometry x="50" y="220" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="98">
+                    <mxGeometry x="15" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin de pouvoir créer des recettes afin que le patient&amp;nbsp; puisse les visualisées et pour certaine les visiteurs aussi.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="98">
+                    <mxGeometry x="45" y="70" width="155" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="US4 Voir les recettes" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="730" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="480" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PATIENT&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="550" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="Les visiteurs voient les recettes de base.&#10;Les patients voient les recettes suplémentaires et seulement les recettes adaptées à leurs régimes et allergies. Les patients peuvent donner un avis et une note sans recharger la page." style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;spacingLeft=2;spacingRight=2;" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="875" width="290" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="&lt;font color=&quot;#000000&quot;&gt;User Story 11&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="1630" width="220" height="250" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="109" value="Créer le CRUD des reviews" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="108">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Urgent" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="108">
+                    <mxGeometry x="113" y="220" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="108">
+                    <mxGeometry x="50" y="220" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="108">
+                    <mxGeometry x="15" y="200" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant qu'admin j'ai besoin de pouvoir modifier une review (note + avis) afin de la valider le commentaire avant de le publier&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="108">
+                    <mxGeometry x="45" y="70" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="&lt;font color=&quot;#000000&quot;&gt;User Story 12&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="1920" width="220" height="270" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="116" value="Créer le formulaire pour laisser une review" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="115">
+                    <mxGeometry x="45" width="155" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="A faire" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;startSize=23;fontColor=#000000;" vertex="1" parent="115">
+                    <mxGeometry x="113" y="240" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="115">
+                    <mxGeometry x="50" y="240" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="115">
+                    <mxGeometry x="15" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que patient j'ai besoin d'accéder à un formulaire afin de noter une recette et laisser un commentaires pour les autres utilisateurs&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="115">
+                    <mxGeometry x="45" y="100" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&lt;font color=&quot;#000000&quot;&gt;User Story 13&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="2230" width="220" height="270" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="122" value="Créer le visuel des notes et des commentaires" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="121">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="A faire" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;startSize=23;fontColor=#000000;" vertex="1" parent="121">
+                    <mxGeometry x="113" y="240" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="121">
+                    <mxGeometry x="50" y="240" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="121">
+                    <mxGeometry x="15" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que patient ou visiteur j'ai besoin de visualiser les notes et commentaires des autres utilisateur afin de savoir si cette recette est bonne&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="121">
+                    <mxGeometry x="45" y="80" width="155" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="&lt;font color=&quot;#000000&quot;&gt;User Story 9&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="1025" width="220" height="270" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="128" value="Créer le visuel du catalogue de recettes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="127">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="&lt;font color=&quot;#000000&quot;&gt;A faire&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;startSize=23;" vertex="1" parent="127">
+                    <mxGeometry x="113" y="240" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="8" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="127">
+                    <mxGeometry x="50" y="240" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="127">
+                    <mxGeometry x="15" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que visiteur ou patient j'ai besoin de visualiser le catalogue de recettes personnalisées ou non afin de choisir une recettes à faire.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="127">
+                    <mxGeometry x="45" y="90" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="&lt;font color=&quot;#000000&quot;&gt;User Story 10&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1360" y="1340" width="220" height="240" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="134" value="Créer le visuel d'une recette" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="133">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="&lt;font color=&quot;#000000&quot;&gt;A faire&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;startSize=23;" vertex="1" parent="133">
+                    <mxGeometry x="113" y="210" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="133">
+                    <mxGeometry x="50" y="210" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="133">
+                    <mxGeometry x="15" y="190" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que visiteur et patient j'ai besoin de visualiser le détail d'une recette afin de pouvoir la réaliser.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="133">
+                    <mxGeometry x="45" y="70" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="US5 Découvrir les services du cabinets" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="730" width="530" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;VISITEUR&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="480" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="Les utilisateurs peuvent consulter le site correctement sur tout support. Les patients et visiteurs doivent pouvoir consulter les pages : &#10;- Accueil avec une section A propos et mes services&#10;- Contact&#10;- mentions légales&#10;- politiques de confidencialité" style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;spacingLeft=2;spacingRight=2;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="875" width="340" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ADMIN&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="550" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="&lt;font color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PATIENT&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="620" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="&lt;font color=&quot;#000000&quot;&gt;User Story 14&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="1025" width="220" height="325" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="145" value="Créer le visuel de la page Accueil" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="144">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" value="Pas d'urgence" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;startSize=23;fontColor=#000000;" vertex="1" parent="144">
+                    <mxGeometry x="113" y="295" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="144">
+                    <mxGeometry x="50" y="295" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="144">
+                    <mxGeometry x="15" y="275" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que patient ou visiteur j'ai besoin de visualiser la page d'accueil avec les sections :&amp;nbsp; A propos et mes services, sur tous les support afin de connaître des informations importantes sur le cabinet.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="144">
+                    <mxGeometry x="45" y="70" width="155" height="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="&lt;font color=&quot;#000000&quot;&gt;User Story 15&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="1400" width="220" height="270" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="151" value="Créer le visuel de la page Contact" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="150">
+                    <mxGeometry x="45" width="155" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="Pas d'urgence" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Helvetica;startSize=23;fontColor=#000000;" vertex="1" parent="150">
+                    <mxGeometry x="113" y="240" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="150">
+                    <mxGeometry x="50" y="240" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="150">
+                    <mxGeometry x="15" y="220" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;En tant que patient ou visiteur j'ai besoin de visualiser la page contact sur tous les supports afin de connaître les informations de contact du cabinet.&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="150">
+                    <mxGeometry x="45" y="80" width="155" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="&lt;font color=&quot;#000000&quot;&gt;User Story 16&lt;/font&gt;" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;startSize=23;fontFamily=Helvetica;fontColor=rgb(240, 240, 240);" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="1700" width="220" height="370" as="geometry">
+                        <mxRectangle x="920" y="1040" width="40" height="150" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="157" value="Créer le visuel des pages politiques de confidentialité et mentions légales" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="156">
+                    <mxGeometry x="45" width="155" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="A faire" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Helvetica;startSize=23;fontColor=#000000;" vertex="1" parent="156">
+                    <mxGeometry x="113" y="340" width="107" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#6c8ebf;fontSize=12;fillColor=#dae8fc;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="156">
+                    <mxGeometry x="50" y="340" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" value="Difficulté :" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=9;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="156">
+                    <mxGeometry x="15" y="320" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;En tant que patient ou visiteur j'ai besoin de visualiser les pages&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;politiques de confidentialité et mentions légales&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;sur tous les supports afin de connaître les informations importantes du site.&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" vertex="1" parent="156">
+                    <mxGeometry x="45" y="110" width="155" height="230" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,13 @@
+<div class="card m-3" style="width: 18rem;">
+	{% if recipe.imageName %}
+		<img src="{{vich_uploader_asset(recipe, 'imageFile')}}" class="card-img-top" alt="photo {{recipe.title}}">
+	{% else %}
+		<img src="{{ asset("build/images/deffaultDisplay.png")}}" class="card-img-top" alt="affiche {{recipe.title}}">
+	{% endif %}
+	<div class="card-body">
+		<h5 class="card-title">
+			<a href="#" class="">{{recipe.title}}</a>
+		</h5>
+		<p class="card-text">{{recipe.decription|raw}}</p>
+	</div>
+</div>

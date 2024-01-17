@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Recettes
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div class="row text-center">
+			{% for recipe in recipes %}
+				{% include "partials/recipe/_recipeBlock.html.twig" %}
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock %}
