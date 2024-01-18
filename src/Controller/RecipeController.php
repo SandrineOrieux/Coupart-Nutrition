@@ -21,7 +21,7 @@ class RecipeController extends AbstractController
 
         if ($user) {
 
-            $recipes = $recipeRepository->findRecipesWithoutUserAllergens($user);
+            $recipes = $recipeRepository->findRecipesByUserDietsAndAllergens($user);
             return $this->render('recipe/index.html.twig', [
                 'recipes' => $recipes,
             ]);

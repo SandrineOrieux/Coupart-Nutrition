@@ -54,34 +54,52 @@ class RecipeRepository extends ServiceEntityRepository
     }
 
 
-    // public function findRecipesByUserDietsAndAllergens($user)
-    // {
-    //     $queryBuilder = $this->createQueryBuilder('r')
-    //         ->innerJoin('r.diets', 'd')
-    //         ->innerJoin('d.users', 'u1')
-    //         ->leftJoin('r.ingredients', 'i')
-    //         ->leftJoin('i.allergen', 'a')
-    //         ->leftJoin('a.users', 'u2')
-    //         ->where('u1.id = :userId')
-    //         ->where('u2.id = :userId')
-    //         ->andWhere('a.id IS NULL OR a NOT IN (:userAllergens)')
-    //         ->setParameter('userId', $user)
-    //         ->setParameter('userAllergens', $user->getAllergens());
+    public function findRecipesByUserDietsAndAllergens($user)
+    {
+        
 
-    //     return $queryBuilder->getQuery()->getResult();
-    // }
+        $requete1 = $this->createQueryBuilder('r')
+        ->select('r.id')
+        ->innerJoin('r.ingredients', 'i')
+        ->innerJoin('i.allergen', 'a2')
+        ->andwhere( 'a2.id = :userAllergens')
+        ->setParameter('userAllergens', $user->getAllergens())
+        ->getQuery()
+        ->getResult();
+
+        $requete2 = $this->createQueryBuilder('r')
+        ->innerJoin('r.diets', 'd')
+        ->innerJoin('d.users', 'u')
+        ->andwhere('u.id = :userId')
+        ->setParameter('userId', $user)
+        ->getQuery()->getResult();
+
+        $queryBuilder = $this->createQueryBuilder('r')
+        ->where('r.id IN (:requete2)')
+        ->andwhere('r.id NOT IN (:requete1)')
+        
+        ->setParameters(array('requete1'=> $requete1, 'requete2'=> $requete2));
+        
+
+        return $queryBuilder->getQuery()->getResult();
+
+    }
 
     public function findRecipesWithoutUserAllergens($user)
     {
+        $requete1 = $this->createQueryBuilder('r')
+        ->select('r.id')
+        ->innerJoin('r.ingredients', 'i')
+        ->innerJoin('i.allergen', 'a2')
+        ->where( 'a2.id = :userAllergens')
+        ->setParameter('userAllergens', $user->getAllergens())
+        ->getQuery()
+        ->getResult();
+
         $queryBuilder = $this->createQueryBuilder('r')
-            ->innerJoin('r.ingredients', 'i')
-            ->leftJoin('i.allergen', 'a')
-            ->innerJoin('r.diets', 'd')
-            ->innerJoin('d.users', 'u')
-            ->where('u.id = :userId')
-            ->andWhere('a.id != :userAllergens')
-            ->setParameter('userId', $user)
-            ->setParameter('userAllergens', $user->getAllergens());
+        ->where('r.id NOT IN (:requete1)')
+        ->setParameter('requete1', $requete1);
+        
 
         return $queryBuilder->getQuery()->getResult();
     }
