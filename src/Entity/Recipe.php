@@ -29,10 +29,10 @@ class Recipe
     private ?int $preparationTime = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $restingTime = null;
+    private ?int $restingTime = 0;
 
     #[ORM\Column(nullable: true)]
-    private ?int $cookingTime = null;
+    private ?int $cookingTime = 0;
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $steps = null;

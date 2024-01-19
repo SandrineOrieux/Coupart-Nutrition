@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Recipe;
 use App\Entity\User;
 use App\Repository\DietRepository;
 use App\Repository\RecipeRepository;
@@ -32,5 +33,14 @@ class RecipeController extends AbstractController
                 'recipes' => $recipes,
             ]);
         }
+    }
+
+    #[Route('/recipe/{id}', name: 'app_recipe_show')]
+    public function show($id, RecipeRepository $recipeRepository): Response
+    {
+        $recipe = $recipeRepository->findOneBy(['id' => $id]);
+        return $this->render('recipe/showRecipe.html.twig', [
+            'recipe' => $recipe,
+        ]);
     }
 }
