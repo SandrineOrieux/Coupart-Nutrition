@@ -7,4 +7,25 @@ import './bootstrap.js';
  */
 import './styles/app.scss'
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
+
+const reviewForm = document.querySelector('form.js-form-review');
+
+reviewForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+
+
+  const formData = new FormData(e.target);
+
+  const url = window.location.pathname
+
+
+  axios.post(url, formData)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error)
+    });
+});
+

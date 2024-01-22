@@ -65,9 +65,6 @@ class RecipeController extends AbstractController
             $entityManagerInterface->flush();
         }
 
-
-
-
         return $this->render('recipe/showRecipe.html.twig', [
             'recipe' => $recipe,
             'form' => $form,
