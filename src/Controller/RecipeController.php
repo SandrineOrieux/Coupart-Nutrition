@@ -46,9 +46,9 @@ class RecipeController extends AbstractController
 
         $recipe = $recipeRepository->findOneBy(['id' => $id]);
 
-        $review = $reviewRepository->findOneBy(['recipe' => $recipe, 'user' => $user]);
-
-        if (!$review) {
+        $reviewUser = $reviewRepository->findOneBy(['recipe' => $recipe, 'user' => $user]);
+        $reviewRecipeValidated = $reviewRepository->findBy(['recipe' => $recipe, 'isValidated' => true]);
+        if (!$reviewUser) {
             $review = new Review();
             $review->setRecipe($recipe);
             $review->setUser($user);
@@ -57,7 +57,7 @@ class RecipeController extends AbstractController
 
         $averageRate = ROUND($reviewRepository->getAverageRaterecipeId($recipe->getId()), 2);
 
-        $form = $this->createForm(ReviewRecipeType::class, $review);
+        $form = $this->createForm(ReviewRecipeType::class, $reviewUser);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -70,6 +70,14 @@ class RecipeController extends AbstractController
             'form' => $form,
             'user' => $user,
             'averageRate' => $averageRate,
+            'reviewsValidated' => $reviewRecipeValidated
         ]);
+    }
+    #[Route('/recipe/{id}/averageRate', name: 'app_recipe_review')]
+    public function getAverage(ReviewRepository $reviewRepository, Recipe $recipe)
+    {
+        $averageRate = ROUND($reviewRepository->getAverageRaterecipeId($recipe->getId()), 2);
+
+        return $this->json(['average' => $averageRate], 200);
     }
 }

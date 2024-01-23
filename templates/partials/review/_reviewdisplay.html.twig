@@ -1,8 +1,8 @@
-<div class="card col-3">
+<div class="card col-3 js-review-{{review.id}}">
 	<div class="card-body">
 		<p>Note :
-			{{review.rate}}</p>
+			<span class="js-rate">{{review.rate}}</span>/5</p>
 		<p>Commentaire :</p>
-		<p>{{review.comment|raw}}</p>
+		<p class="js-comment">{{review.comment|raw}}</p>
 	</div>
 </div>

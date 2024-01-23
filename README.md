@@ -76,4 +76,8 @@ https://github.com/dustin10/VichUploaderBundle/blob/master/docs/index.md
 - Icones du dashbord :
 https://fontawesome.com
 
+- Requête ajax avec axios :
+https://axios-http.com/fr/docs/intro
+
+
 
