@@ -5,14 +5,22 @@
 {% endblock %}
 
 {% block body %}
-	<div class="px-4 pt-5 my-5 text-center border-bottom">
-		<h1 class="display-4 fw-bold text-body-emphasis">{{ recipe.title }}</h1>
-		<p>note moyenne :
-			<span class="js-average-rate">{{averageRate}}</span>/5</p>
+	<div class=" text-center">
+		<div class="container px-4 pb-5 my-5">
+			<h1 class="display-4 fw-bold text-primary">{{ recipe.title }}</h1>
+			<p>note moyenne :
+				<span class="js-average-rate">{{averageRate}}</span>/5</p>
+		</div>
+		{#image et description  #}
+		<div class="container px-4 mb-5">
+			<div class="row flex-lg-row-reverse align-items-center g-5">
+				<div class="col-lg-6">
+					<p class="lead text-primary">{{recipe.decription|raw}}</p>
+				</div>
+				<div class="col-10 col-sm-8 col-lg-6">
+					{% include "/partials/recipe/_displayImgRecipe.html.twig" %}
+				</div>
 
-		<div class="overflow-hidden">
-			<div class="container px-5">
-				{% include "/partials/recipe/_displayImgRecipe.html.twig" %}
 			</div>
 			<div class="d-flex row">
 				<p class="col text-nowrap">Temps de préparation :
@@ -38,52 +46,61 @@
 				</p>
 			</div>
 		</div>
-		<div class="col-lg-6 mx-auto">
-			<p class="lead mb-4">{{recipe.decription|raw}}</p>
-		</div>
-		<h2 class="text-start">Les ingrédients :</h2>
-		<div class="col-lg-6">
-			<ul>
-				{% for ingredient in recipe.ingredients %}
-					<li class="text-start">{{ingredient}}</li>
-				{% endfor %}
-			</ul>
-		</div>
 
-		<h2 class="text-start">Les étapes :</h2>
-		<p class="">{{recipe.steps|raw}}</p>
 
-		<h2 class="text-start">Les régimes alimentaires compatibles :</h2>
-		<div class="col-lg-6">
-			<ul>
-				{% for diet in recipe.diets %}
-					<li class="text-start">{{diet}}</li>
-				{% endfor %}
-			</ul>
-		</div>
-
-		<h2 class="text-start">L'avis des patients :</h2>
-
-		<div class="row gap-3">
-			{% for review in reviewsValidated %}
-				{% include "/partials/review/_reviewdisplay.html.twig" %}
-
-			{% endfor %}
-		</div>
-
-		<h2 class="text-start">Laisser votre commentaire:</h2>
-
-		{% if user %}
-			<div class="text-start">
-				{% include "partials/review/_reviewForm.html.twig" %}
+		<div class="px-4 py-5 text-center bg-info mb-5">
+			<h2 class="display-5 fw-bold mb-4">Les ingrédients :</h2>
+			<div class="col-lg-12 mx-auto">
+				<ul class=" text-start">
+					{% for ingredient in recipe.ingredients %}
+						<li class="text-primary bg-info">{{ingredient}}</li>
+					{% endfor %}
+				</ul>
 			</div>
+		</div>
 
-		{% else %}
-			<p>Vous devez être connecté en tant que patients pour noter cette. Rendez-vous sur la page
-				<a href="{{path('app_login')}}">connexion</a>
-			</p>
-		{% endif %}
+		<div class="px-4 py-5 container mb-5">
+			<h2 class="text-start">Les étapes :</h2>
+			<p class="">{{recipe.steps|raw}}</p>
+		</div>
+
+		<div class="px-4 py-5 container bg-info mb-5">
+			<h2 class="text-start">Les régimes alimentaires compatibles :</h2>
+			<div class="col-lg-6">
+				<ul>
+					{% for diet in recipe.diets %}
+						<li class="text-start">{{diet}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="px-4 py-5 container mb-5">
+			<h2 class="text-start">L'avis des patients :</h2>
+
+			<div class="row gap-3">
+				{% for review in reviewsValidated %}
+					{% include "/partials/review/_reviewdisplay.html.twig" %}
+
+				{% endfor %}
+			</div>
+		</div>
 
 
+		<div class="px-4 py-5 container mb-5">
+			<h2 class="text-start">Laisser votre commentaire:</h2>
+
+			{% if user %}
+				<div class="text-start">
+					{% include "partials/review/_reviewForm.html.twig" %}
+				</div>
+
+			{% else %}
+				<p>Vous devez être connecté en tant que patients pour noter cette. Rendez-vous sur la page
+					<a href="{{path('app_login')}}">connexion</a>
+				</p>
+			{% endif %}
+
+		</div>
 	</div>
 {% endblock %}

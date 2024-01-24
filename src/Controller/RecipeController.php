@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class RecipeController extends AbstractController
 {
-    #[Route('/recipe', name: 'app_recipe')]
+    #[Route('/recettes', name: 'app_recipe')]
     public function index(RecipeRepository $recipeRepository, Security $security, UserRepository $userRepository): Response
     {
         $user = $security->getUser();
@@ -28,17 +28,19 @@ class RecipeController extends AbstractController
             $recipes = $recipeRepository->findRecipesByUserDietsAndAllergens($user);
             return $this->render('recipe/index.html.twig', [
                 'recipes' => $recipes,
+                'user' => $user
             ]);
         } else {
             $recipes = $recipeRepository->findRecipesPublic();
 
             return $this->render('recipe/index.html.twig', [
                 'recipes' => $recipes,
+                'user' => $user
             ]);
         }
     }
 
-    #[Route('/recipe/{id}', name: 'app_recipe_show')]
+    #[Route('/recettes/{id}', name: 'app_recipe_show')]
     public function show($id, RecipeRepository $recipeRepository, ReviewRepository $reviewRepository, Request $request, EntityManagerInterface $entityManagerInterface, Security $security): Response
     {
 
@@ -73,7 +75,7 @@ class RecipeController extends AbstractController
             'reviewsValidated' => $reviewRecipeValidated
         ]);
     }
-    #[Route('/recipe/{id}/averageRate', name: 'app_recipe_review')]
+    #[Route('/recettes/{id}/averageRate', name: 'app_recipe_review')]
     public function getAverage(ReviewRepository $reviewRepository, Recipe $recipe)
     {
         $averageRate = ROUND($reviewRepository->getAverageRaterecipeId($recipe->getId()), 2);

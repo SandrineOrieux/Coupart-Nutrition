@@ -1,7 +1,63 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	{{ page_name }}
+	Accueil
 {% endblock %}
 
-{% block body %}{% endblock %}
+{% block body %}
+	<div class="container px-4 py-5 bg-info">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+			<div class="col-10 col-sm-8 col-lg-6">
+				<img src="{{ asset('build/images/ambianceImage.png')}}" alt="nouriture" class="img-fluid">
+			</div>
+			<div class="col-lg-6">
+				<h1 class="display-5 fw-bold text-primary lh-1 mb-3">Sandrine Coupart votre nutritioniste</h1>
+				<p class="lead text-primary">Lorem ipsum dolor sit amet consectetur. Blandit lobortis a et odio. Interdum in aliquam et lacus pellentesque at sed. Est integer pellentesque morbi interdum gravida magna.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container px-4 py-5">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+			<div class="col-lg-6">
+				<h2 class="display-5 fw-bold text-primary lh-1 mb-3">A propos</h2>
+				<p class="lead text-primary">Lorem ipsum dolor sit amet consectetur. Blandit lobortis a et odio. Interdum in aliquam et lacus pellentesque at sed. Est integer pellentesque morbi interdum gravida magna.
+				</p>
+			</div>
+			<div class="col-10 col-sm-8 col-lg-6">
+				<img src="{{ asset('build/images/portrait.png')}}" alt="portrait" class="img-fluid">
+			</div>
+		</div>
+	</div>
+
+	<div class="px-4 py-5 text-center bg-info">
+		<h2 class="display-5 fw-bold ">Mes services</h2>
+		<div class="col-lg-12 mx-auto">
+			<ul class="list-unstyled">
+				<li class="text-primary bg-info">Lispsum : Ac vitae tristique id integer lacinia. Nunc nunc adipiscing neque et.stas auctor ultrices eget</li>
+				<li class="text-primary bg-info">Lorem : Ac vitae tristique id integer lacinia. Nunc nunc adipiscing neque et.stas auctor ultrices eget</li>
+				<li class="text-primary bg-info">Pretium : Ac vitae tristique id integer lacinia. Nunc nunc adipiscing neque et.stas auctor ultrices eget</li>
+				<li class="text-primary bg-info">Eget : Ac vitae tristique id integer lacinia. Nunc nunc adipiscing neque et.stas auctor ultrices eget</li>
+				<li class="text-primary bg-info">Aliquam :  Ac vitae tristique id integer lacinia. Nunc nunc adipiscing neque et.stas auctor ultrices eget</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container px-4 py-5">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+			<div class="col-10 col-sm-8 col-lg-6">
+				<img src="{{ asset('build/images/illustration.png')}}" alt="coeur" class="img-fluid">
+			</div>
+			<div class="col-lg-6">
+				<h2 class="display-5 fw-bold text-primary lh-1 mb-3">Pensez à votre santé</h2>
+				<p class="lead text-primary">Lorem ipsum dolor sit amet consectetur. Blandit lobortis a et odio. Interdum in aliquam et lacus pellentesque at sed. Est integer pellentesque morbi interdum gravida magna.
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+
+{% endblock %}
