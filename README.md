@@ -79,5 +79,11 @@ https://fontawesome.com
 - Requête ajax avec axios :
 https://axios-http.com/fr/docs/intro
 
+- Rédaction de la page politique de confidentialité et mentions légales :
+https://www.legalplace.fr/guides/politique-de-confidentialite-rgpd/
+https://www.legalplace.fr/guides/mentions-legales/
+
+
+
 
 
