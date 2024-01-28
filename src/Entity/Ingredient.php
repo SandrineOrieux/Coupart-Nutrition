@@ -19,12 +19,12 @@ class Ingredient
     private ?string $name = null;
 
     #[ORM\ManyToOne]
-    private ?quantity $quantity = null;
+    private ?Quantity $quantity = null;
 
     #[ORM\ManyToOne(inversedBy: 'ingredients')]
     private ?Allergen $allergen = null;
 
-    #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'ingredients')]
+    #[ORM\ManyToMany(targetEntity: Recipe::class, inversedBy: 'ingredients')]
     private Collection $recipes;
 
     public function __construct()
@@ -58,12 +58,12 @@ class Ingredient
         return $this;
     }
 
-    public function getQuantity(): ?quantity
+    public function getQuantity(): ?Quantity
     {
         return $this->quantity;
     }
 
-    public function setQuantity(?quantity $quantity): static
+    public function setQuantity(?Quantity $quantity): static
     {
         $this->quantity = $quantity;
 
@@ -83,14 +83,14 @@ class Ingredient
     }
 
     /**
-     * @return Collection<int, recipe>
+     * @return Collection<int, Recipe>
      */
     public function getRecipes(): Collection
     {
         return $this->recipes;
     }
 
-    public function addRecipe(recipe $recipe): static
+    public function addRecipe(Recipe $recipe): static
     {
         if (!$this->recipes->contains($recipe)) {
             $this->recipes->add($recipe);
@@ -99,7 +99,7 @@ class Ingredient
         return $this;
     }
 
-    public function removeRecipe(recipe $recipe): static
+    public function removeRecipe(Recipe $recipe): static
     {
         $this->recipes->removeElement($recipe);
 

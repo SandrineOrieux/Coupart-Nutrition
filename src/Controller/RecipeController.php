@@ -51,10 +51,10 @@ class RecipeController extends AbstractController
         $reviewUser = $reviewRepository->findOneBy(['recipe' => $recipe, 'user' => $user]);
         $reviewRecipeValidated = $reviewRepository->findBy(['recipe' => $recipe, 'isValidated' => true]);
         if (!$reviewUser) {
-            $review = new Review();
-            $review->setRecipe($recipe);
-            $review->setUser($user);
-            $review->setIsValidated(False);
+            $reviewUser = new Review();
+            $reviewUser->setRecipe($recipe);
+            $reviewUser->setUser($user);
+            $reviewUser->setIsValidated(False);
         }
 
         $averageRate = ROUND($reviewRepository->getAverageRaterecipeId($recipe->getId()), 2);
@@ -62,8 +62,9 @@ class RecipeController extends AbstractController
         $form = $this->createForm(ReviewRecipeType::class, $reviewUser);
         $form->handleRequest($request);
 
+        
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManagerInterface->persist($review);
+            $entityManagerInterface->persist($reviewUser);  
             $entityManagerInterface->flush();
         }
 

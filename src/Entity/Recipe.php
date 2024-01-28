@@ -48,10 +48,10 @@ class Recipe
     #[ORM\JoinColumn(nullable: false)]
     private ?TypeOfRecipe $TypeOfRecipe = null;
 
-    #[ORM\ManyToMany(targetEntity: diet::class, inversedBy: 'recipes')]
+    #[ORM\ManyToMany(targetEntity: Diet::class, inversedBy: 'recipes')]
     private Collection $diets;
 
-    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: review::class, orphanRemoval: true)]
+    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: Review::class, orphanRemoval: true)]
     private Collection $reviews;
 
     #[Vich\UploadableField(mapping: 'coupart', fileNameProperty: 'imageName', size: 'imageSize')]
@@ -206,14 +206,14 @@ class Recipe
     }
 
     /**
-     * @return Collection<int, diet>
+     * @return Collection<int, Diet>
      */
     public function getDiets(): Collection
     {
         return $this->diets;
     }
 
-    public function addDiet(diet $diet): static
+    public function addDiet(Diet $diet): static
     {
         if (!$this->diets->contains($diet)) {
             $this->diets->add($diet);
@@ -222,7 +222,7 @@ class Recipe
         return $this;
     }
 
-    public function removeDiet(diet $diet): static
+    public function removeDiet(Diet $diet): static
     {
         $this->diets->removeElement($diet);
 
@@ -230,14 +230,14 @@ class Recipe
     }
 
     /**
-     * @return Collection<int, review>
+     * @return Collection<int, Review>
      */
     public function getReviews(): Collection
     {
         return $this->reviews;
     }
 
-    public function addReview(review $review): static
+    public function addReview(Review $review): static
     {
         if (!$this->reviews->contains($review)) {
             $this->reviews->add($review);
@@ -247,7 +247,7 @@ class Recipe
         return $this;
     }
 
-    public function removeReview(review $review): static
+    public function removeReview(Review $review): static
     {
         if ($this->reviews->removeElement($review)) {
             // set the owning side to null (unless already changed)

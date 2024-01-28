@@ -27,7 +27,6 @@ reviewForm.addEventListener('submit', (e) => {
 
   axios.post(url, formData)
     .then(function () {
-
       reviewForm.innerHTML = "<p>Votre évaluation a bien été prise en compte : la note moyenne a été mis à jours, votre commentaire apparaîtra aprés validation d'un administrateur.</p>"
       //take average rate update
       axios.get(urlAverage)
@@ -43,6 +42,7 @@ reviewForm.addEventListener('submit', (e) => {
         })
     })
     .catch(function (error) {
+
       console.log(error)
     })
 
