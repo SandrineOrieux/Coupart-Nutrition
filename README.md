@@ -24,7 +24,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 3. -1 Installez les dépendances via Composer : `composer install`
 3. -2 Installez les dépendances via npm : `npm install`
 4. Configurer le fichier .env pour la base de données et le mail
-5. générer les autoloads : `composer require symfony/runtime`
+5. Eénérer les autoloads : `composer require symfony/runtime`
 6. Créez la base de données : `symfony console doctrine:database:create`
 7. Exécutez les migrations pour créer les tables : `synfony console doctrine:migrations:migrate`
 
@@ -34,8 +34,8 @@ Avant de commencer, assurez-vous d'avoir installé :
  - Lancez npm : `npm run build` (pour developpement)
 
 ## Créer un admin
- - Créer un hesh du password : `symfony console security:hash-password`
- - Inserrer dans la Bdd : `INSERT INTO `user` (`id`, `email`, `roles`, `password`, `first_name`, `last_name`, `birthday`) VALUES(1, 'admin@test.com', '[\"ROLE_ADMIN\"]', '{le mot de pass hash}', 'Sandrine', 'Coupart', '1988-05-03');`
+ - Créer un hash du password : `symfony console security:hash-password`
+ - Insérer dans la Bdd : `INSERT INTO `user` (`id`, `email`, `roles`, `password`, `first_name`, `last_name`, `birthday`) VALUES(1, 'admin@test.com', '[\"ROLE_ADMIN\"]', '{le mot de pass hash}', 'Sandrine', 'Coupart', '1988-05-03');`
 
 ## Contribuer
 
