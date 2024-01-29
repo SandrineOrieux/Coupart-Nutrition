@@ -33,6 +33,10 @@ Avant de commencer, assurez-vous d'avoir installé :
  - Lancez le serveur local : `symfony server:start` ou utilisez votre serveur web habituel.
  - Lancez npm : `npm run build` (pour developpement)
 
+## Créer un admin
+ - Créer un hesh du password : `symfony console security:hash-password`
+ - Inserrer dans la Bdd : `INSERT INTO `user` (`id`, `email`, `roles`, `password`, `first_name`, `last_name`, `birthday`) VALUES(1, 'admin@test.com', '[\"ROLE_ADMIN\"]', '{le mot de pass hash}', 'Sandrine', 'Coupart', '1988-05-03');`
+
 ## Contribuer
 
 Si vous souhaitez contribuer à ce projet, veuillez suivre ces étapes :
