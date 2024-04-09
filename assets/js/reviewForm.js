@@ -23,12 +23,13 @@ export default function ReviewForm() {
             averageRate.innerHTML = response.data['average']
 
           })
-          .catch(() => {
+          .catch((error) => {
+            console.log(error.message)
             reviewForm.innerHTML = errorMessage()
           })
       })
-      .catch(function () {
-
+      .catch(function (error) {
+        console.log(error.message)
         reviewForm.innerHTML = errorMessage()
       })
 
