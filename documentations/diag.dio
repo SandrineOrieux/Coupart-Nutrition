@@ -1,0 +1,279 @@
+<mxfile host="65bd71144e">
+    <diagram id="AN1jI172gzFupl1CIArq" name="Page-1">
+        <mxGraphModel dx="2258" dy="-1534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="153" value="diagramme de classes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="3450" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="App" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=30;fontColor=#ffffff;verticalAlign=top;fillColor=#FFFFFF;strokeColor=#3A5431;backgroundOutline=0;" vertex="1" parent="1">
+                    <mxGeometry x="-20" y="2760" width="810" height="1020" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwjTnIHI8ouDAxXJUKQEHYWSAA4Q3ewLegQIBRAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;sequence diagram&lt;/span&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;fillColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry y="2770" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="Patient logged" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="2950" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="3040" width="10" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="3040" width="10" height="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="711" y="3070" width="10" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;entryX=0.556;entryY=0.961;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="161" target="154">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="430" y="3549.9999999999995" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="161" value="APP" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="2970" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="BDD" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="661" y="2970" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" value="comment rate validated" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="2860" width="325" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="439.99999999999955" y="3091.4399999999996" as="sourcePoint"/>
+                        <mxPoint x="709.9999999999995" y="3091" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="165" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;request user/recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="164">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-40" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="166" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="439.99999999999955" y="3141" as="sourcePoint"/>
+                        <mxPoint x="714.9999999999995" y="3141.4399999999996" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="167" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;return user/recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="166">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-39" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="168" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="166">
+                    <mxGeometry x="0.6827" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="169" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;entryX=0.315;entryY=0.98;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="154">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="234.5" y="3550" as="targetPoint"/>
+                        <mxPoint x="234.99999999999955" y="3030" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="170" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="99" y="3240" as="sourcePoint"/>
+                        <mxPoint x="424.99999999999955" y="3240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="171" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;submit comment and rate form&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="170">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-41" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="172" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="435.5" y="3320" as="sourcePoint"/>
+                        <mxPoint x="713.0000000000005" y="3320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="173" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwjTnIHI8ouDAxXJUKQEHYWSAA4Q3ewLegQIBRAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;updates the average rating in dataBase&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="172">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="3" y="-22" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="174" value="Admin logged" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="2950" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="3390" width="10" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="239.99999999999955" y="3470" as="sourcePoint"/>
+                        <mxPoint x="419.99999999999955" y="3470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="177" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;validate comment&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="176">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-15" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="178" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;div class=&quot;QmZWSe&quot;&gt;&lt;div class=&quot;DHcWmd&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;oSioSc&quot;&gt;&lt;div id=&quot;tw-target&quot;&gt;&lt;div data-entityname=&quot;Google Translate&quot; data-attrid=&quot;tw-targetArea&quot; class=&quot;g9WsWb PZPZlf&quot; id=&quot;kAz1tf&quot;&gt;&lt;div tabindex=&quot;0&quot; id=&quot;tw-target-text-container&quot; class=&quot;tw-ta-container F0azHf tw-nfl&quot;&gt;&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwjTnIHI8ouDAxXJUKQEHYWSAA4Q3ewLegQIBRAP&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;updates the average rating&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="485" y="2820" as="geometry">
+                        <mxPoint x="44" y="427" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="179" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1" source="157">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="239.66666666666666" y="3360" as="sourcePoint"/>
+                        <mxPoint x="424.99999999999955" y="3364.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="180" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;show the average rating updated&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="179">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-44" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="181" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="101" y="3080" as="sourcePoint"/>
+                        <mxPoint x="427" y="3080" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;ask for the recipes page&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="181">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-41" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="183" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100.00000000000045" y="3170" as="sourcePoint"/>
+                        <mxPoint x="424.99999999999955" y="3170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="184" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;personnal recipes enterface&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="183">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-52" y="-20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" value="" style="curved=1;endArrow=classic;html=1;fontFamily=Helvetica;entryX=1.1;entryY=0.405;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#000000;" edge="1" parent="1" target="158">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="439.99999999999955" y="3250" as="sourcePoint"/>
+                        <mxPoint x="550" y="3340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="490" y="3250"/>
+                            <mxPoint x="500" y="3290"/>
+                            <mxPoint x="470" y="3300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="186" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;exitX=0.5;exitY=0.692;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="158">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="442.5" y="3490.4399999999996" as="sourcePoint"/>
+                        <mxPoint x="712.4999999999995" y="3490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="187" value="save the comment in database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="186">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-40" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="188" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="99" y="3619" as="sourcePoint"/>
+                        <mxPoint x="424.99999999999955" y="3619" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="189" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;span lang=&quot;en&quot; class=&quot;Y2IQFc&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;ask for the recipes page&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="188">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-55" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="190" style="edgeStyle=none;html=1;entryX=0.1;entryY=0.073;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;exitX=1;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100.00000000000045" y="3685" as="sourcePoint"/>
+                        <mxPoint x="424.99999999999955" y="3685" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="191" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;personnal recipes enterface with his comment&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="190">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-46" y="-25" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="192" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;entryX=0.909;entryY=0.971;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="162" target="154">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="715.656" y="3660.24" as="targetPoint"/>
+                        <mxPoint x="715.9897350202914" y="3010" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="193" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="711" y="3290" width="10" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="711" y="3470" width="10" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;exitX=1.5;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="437.49999999999955" y="3360.120000000001" as="sourcePoint"/>
+                        <mxPoint x="712.4999999999995" y="3360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="196" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;return recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="195">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-39" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="197" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="195">
+                    <mxGeometry x="0.6827" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="198" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;exitX=1.5;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="437.49999999999955" y="3530.120000000001" as="sourcePoint"/>
+                        <mxPoint x="712.4999999999995" y="3530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="199" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;return recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="198">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-39" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="200" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="198">
+                    <mxGeometry x="0.6827" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="201" style="edgeStyle=none;html=1;endArrow=block;endFill=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="441" y="3630.4399999999996" as="sourcePoint"/>
+                        <mxPoint x="711" y="3630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="202" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;request user/recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="201">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-40" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="203" style="edgeStyle=none;html=1;endArrow=none;endFill=0;startArrow=block;startFill=1;dashed=1;exitX=1.5;exitY=0.523;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="437.49999999999955" y="3670.120000000001" as="sourcePoint"/>
+                        <mxPoint x="712.4999999999995" y="3670" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="204" value="&lt;pre dir=&quot;ltr&quot; data-ved=&quot;2ahUKEwiWief8te6CAxUTfqQEHRUeBPsQ3ewLegQICBAP&quot; style=&quot;text-align:left&quot; id=&quot;tw-target-text&quot; data-placeholder=&quot;Traduction&quot; class=&quot;tw-data-text tw-text-large tw-ta&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;return user/recipes datas&lt;/font&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="203">
+                    <mxGeometry x="0.1718" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-39" y="-23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="205" value="&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" connectable="0" parent="203">
+                    <mxGeometry x="0.6827" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="206" value="" style="edgeStyle=none;html=1;dashed=1;fontFamily=Helvetica;startArrow=none;startFill=0;endArrow=none;endFill=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;strokeColor=#000000;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="95" y="3750" as="targetPoint"/>
+                        <mxPoint x="95.00000000000045" y="3030" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="207" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fontColor=#000000;labelBackgroundColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="3599" width="10" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
