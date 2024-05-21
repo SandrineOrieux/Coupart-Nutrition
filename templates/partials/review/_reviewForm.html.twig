@@ -1,4 +1,6 @@
 {{ form_start(form, {'attr': {'class': 'js-form-review'}})}}
+{{form_widget(form._token)}}
 {{form_widget(form)}}
 <button class="btn btn-primary text-success">Enregistrer</button>
+
 {{form_end(form)}}
