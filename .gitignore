@@ -31,4 +31,4 @@ yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
 ###< documentation ###
-/documentations
+/documentations/
