@@ -10,9 +10,10 @@ $info: #E4D4A5;
 //font
 
 $font-family-sans-serif: 'open sans';
-$font-size-base: 3rem;
-
-// $font-size-lg: $font-size-base;
+$font-size-base: 1rem;
+$font-size-lg: $font-size-base;
+$font-size-sm: $font-size-base;
+$font-size-md: $font-size-base;
 
 
 // the ~ allows you to reference things in node_modules
