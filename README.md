@@ -1,6 +1,6 @@
 # Coupart-nutrition
 
-Ce projet est une application Symfony conçue pour une nutritionniste dans le cadre d'une évaluation d'entrainement au titre graduate developpeur web.
+Ce projet est une application Symfony conçue pour une nutritionniste.
 Il comprend un front et un back. 
 
 ## Installation

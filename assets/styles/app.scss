@@ -2,7 +2,7 @@
 // customize some Bootstrap variables
 
 //color
-$primary: rgb(0, 50, 32);
+$primary: #003220;
 $secondary: #CB4727;
 $success: #C2EB00;
 $info: #E4D4A5;
@@ -10,8 +10,9 @@ $info: #E4D4A5;
 //font
 
 $font-family-sans-serif: 'open sans';
-$font-size-base: 1.5rem;
-$font-size-lg: $font-size-base;
+$font-size-base: 3rem;
+
+// $font-size-lg: $font-size-base;
 
 
 // the ~ allows you to reference things in node_modules

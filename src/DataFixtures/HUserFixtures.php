@@ -8,7 +8,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Faker;
 
-class UserFixtures extends Fixture
+class HUserFixtures extends Fixture
 {
   private $encoder;
 
@@ -21,6 +21,7 @@ class UserFixtures extends Fixture
     $faker = Faker\Factory::create('fr_FR');
 
     for ($nbUsers = 1; $nbUsers <= 15; $nbUsers++) {
+      
       $user = new User();
       if ($nbUsers === 1) {
         $user->setEmail('sandrine.coupart@coupart-nutrition.com');
@@ -28,12 +29,26 @@ class UserFixtures extends Fixture
         $user->setFirstname('Sandrine');
         $user->setLastname('Coupart');
         $user->setRoles(['ROLE_ADMIN']);
+        $user->setBirthday(new \DateTimeImmutable(($faker->date())));
       } else {
         $user->setEmail($faker->email);
         $user->setPassword($this->encoder->hashPassword($user, 'azerty'));
         $user->setFirstname($faker->firstName);
         $user->setLastname($faker->lastName);
         $user->setRoles(['ROLE_USER']);
+        $user->setBirthday(new \DateTimeImmutable(($faker->date())));
+        for ($i = 1; $i <= $faker->numberBetween(1, 10); $i++) {
+          $diet = $this->getReference('diet_' . $faker->numberBetween(1, 30));
+          $user->addDiet($diet);
+        }
+        if($nbUsers%2 == 1){
+          for ($i = 1; $i <= $faker->numberBetween(1, 11); $i++) {
+            $allergen = $this->getReference('allergen_' . $faker->numberBetween(0,11));
+            $user->addAllergen($allergen);
+          }
+        }
+        
+
       }
       //add reference 
       $this->addReference('user_' . $nbUsers, $user);
@@ -41,5 +56,11 @@ class UserFixtures extends Fixture
       $manager->persist($user);
     }
     $manager->flush();
+  }
+  public function getDependencies()
+  {
+    return [
+      FeatureRecipeFixtures::class
+    ];
   }
 }

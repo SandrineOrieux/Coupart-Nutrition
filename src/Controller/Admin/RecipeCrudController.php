@@ -46,6 +46,6 @@ class RecipeCrudController extends AbstractCrudController
         yield AssociationField::new('TypeOfRecipe', 'Type de recette')->hideOnIndex();
         yield AssociationField::new('diets', 'Régimes alimentaires compatibles')->hideOnIndex();
         yield TextEditorField::new('steps', 'Les étapes')->hideOnIndex();
-        yield BooleanField::new('isPublic', 'Rendre visible aux visiteurs')->hideOnIndex();
+        yield BooleanField::new('isPublic', 'Rendre visible aux visiteurs');
     }
 }

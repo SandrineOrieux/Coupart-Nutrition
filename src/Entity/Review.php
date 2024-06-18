@@ -16,7 +16,7 @@ class Review
     private ?int $id = null;
 
     #[ORM\Column(type: Types::SMALLINT)]
-    #[Assert\Regex('/[1-5]/', message: "La valeur de la note doit être comprise entre 1 et 5.")]
+    #   
     private ?int $rate = null;
 
     #[ORM\Column(type: Types::TEXT, nullable: true)]

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="mETmnVZE57GePqD7Dpf7" name="Page-1">
-        <mxGraphModel dx="2803" dy="1408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1631" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -414,11 +414,38 @@
                 <mxCell id="161" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;En tant que patient ou visiteur j'ai besoin de visualiser les pages&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;politiques de confidentialité et mentions légales&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;sur tous les supports afin de connaître les informations importantes du site.&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontFamily=Helvetica;startSize=23;" parent="156" vertex="1">
                     <mxGeometry x="45" y="110" width="155" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="163" value="" style="endArrow=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="3">
+                <mxCell id="163" value="" style="endArrow=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3" target="3" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="250" y="1920" as="sourcePoint"/>
                         <mxPoint x="300" y="1870" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="165" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2190" y="640" as="sourcePoint"/>
+                        <mxPoint x="2240" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="166" value="" style="endArrow=none;html=1;fillColor=#0050ef;strokeColor=#001DBC;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;" parent="1" source="164" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2190" y="-110" as="sourcePoint"/>
+                        <mxPoint x="2320" y="2770" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="167" value="US1 Trier les recettes par catégories" style="rounded=0;whiteSpace=wrap;html=1;fontSize=30;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="2360" y="730" width="530" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="" style="endArrow=none;html=1;fillColor=#0050ef;strokeColor=#001DBC;dashed=1;exitX=0.782;exitY=0.099;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="164" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="2319.84" y="378.8800000000001" as="sourcePoint"/>
+                        <mxPoint x="2325" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="164" value="Version 2" style="text;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="2270" y="1010" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="Les utilisateurs peuvent consulter le site correctement sur tout support. Les patients et visiteurs doivent pouvoir consulter les pages : &#10;- Accueil avec une section A propos et mes services&#10;- Contact&#10;- mentions légales&#10;- politiques de confidencialité" style="rounded=0;whiteSpace=wrap;fontSize=12;fillColor=#ffcd28;strokeColor=#d79b00;gradientColor=#ffa500;spacing=0;fontColor=#000000;spacingLeft=2;spacingRight=2;" parent="1" vertex="1">
+                    <mxGeometry x="2480" y="875" width="340" height="125" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

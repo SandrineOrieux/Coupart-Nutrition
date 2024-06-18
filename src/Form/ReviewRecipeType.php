@@ -29,7 +29,6 @@ class ReviewRecipeType extends AbstractType
                 ],
                 'expanded' => true,
                 'multiple' => false,
-
             ])
             ->add('comment', TextareaType::class, [
                 'label' => 'Donnez votre avis :'

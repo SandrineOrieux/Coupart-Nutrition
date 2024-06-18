@@ -43,7 +43,6 @@ class RecipeController extends AbstractController
     #[Route('/recettes/{id}', name: 'app_recipe_show')]
     public function show($id, RecipeRepository $recipeRepository, ReviewRepository $reviewRepository, Request $request, EntityManagerInterface $entityManagerInterface, Security $security): Response
     {
-
         $user = $security->getUser();
 
         $recipe = $recipeRepository->findOneBy(['id' => $id]);
@@ -62,7 +61,6 @@ class RecipeController extends AbstractController
         $form = $this->createForm(ReviewRecipeType::class, $reviewUser);
         $form->handleRequest($request);
 
-        
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManagerInterface->persist($reviewUser);  
             $entityManagerInterface->flush();
