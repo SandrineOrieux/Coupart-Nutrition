@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
 			{% block title %}{% endblock %}
 			- Coupart Nutrition</title>
@@ -20,7 +21,7 @@
 			{{ importmap('app') }}
 		{% endblock %}
 	</head>
-	<body class="text-primary">
+	<body class="text-primary container">
 		{% include "/partials/_header.html.twig" %}
 		
 		<div class="container"> {% block body %}{% endblock %}
